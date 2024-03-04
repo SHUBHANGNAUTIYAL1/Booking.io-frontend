@@ -1,6 +1,7 @@
 .navbar{
-  height: 50px;
+  height: 70px;
   background-color: #003580;
+  
   display: flex;
   justify-content: center;
 }
@@ -15,13 +16,124 @@
 }
 
 .logo{
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  color: white; 
+  font-family: Arial, sans-serif;
+}
+.highlight {
+  color: #007bff; /* Blue color */
 }
 
-.navButton{
+.navItems .navButton{
   margin-left: 20px;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  background: white;
+  color:black;
+}
+.navItems{
+  display:flex;
+  margin-top:-2rem;
+  
+}
+
+
+/* card css*/
+
+.profile-icon-container {
+  position: relative;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left:5rem;
+  margin-top:0.5rem;
+  transition: background-color 0.3s ease;
+  background-image:url("https://img.freepik.com/free-vector/boy-cartoon-head-wearing-glasses-isolated_1308-153521.jpg");
+  background-size:cover;
+  z-index:1000;
+  display: inline-block;
+  
+}
+
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+}
+
+.profile-details {
+  font-family: Classic Serif;
+  position: absolute;
+   /* Adjust this value to position the details relative to the icon */
+  right: 0;
+  background-color: rgba(255, 255, 255, 0);
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display:flex;
+  flex-direction:column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure the details overlay other content */
+  top:5rem;
+  right:-25px;
+  border:none;
+}
+  .profile-icon.open + .profile-details {
+    opacity: 1; /* Show modal when .open class is present */
+    pointer-events: auto; /* Enable clicks when modal is open */
+  }
+
+
+.profile-details button {
+  display: block;
+  margin-top: 10px;
+  background: #16a085;
+  padding:5px;
+  border:none;
+  border-radius:5px;
+  color:white;
+  transition: opacity 0.3s ease;
+  
+}
+
+.profile-icon.expanded {
+  border-radius: 5px;
+}
+
+.profile-details p{
+
+  margin-bottom:0.5rem;
+}
+.abc
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+.addhotel {
+  margin-left: 50rem;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
   color: #003580;
+  width:7rem;
+  height:3rem;
+  border:1px solid white;
+  background-color:rgba(0, 53, 128, 0.1);
+  color:white;
+  font-size:16px;
+  border-radius:3rem;
+  margin-top:0.5rem;
+  
+  
 }

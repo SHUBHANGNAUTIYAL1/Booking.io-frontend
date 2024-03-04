@@ -1,0 +1,116 @@
+.addHotel {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:1000;
+
+  }
+  
+  .rContainer {
+    width:80vw;
+    height:50vh;
+    overflow-y:auto;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .new {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .newContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .top h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .bottom {
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .left img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .right {
+    flex: 2;
+    padding: 0 20px;
+  }
+  
+  .formInput {
+    margin-bottom: 15px;
+  }
+  
+  .formInput label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type='text'],
+  input[type='file'],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .selectRooms select {
+    height: 150px;
+  }
+  
+  button {
+    background-color: #007bff;
+    width:100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Centering the button */
+  margin-top:2rem;
+  display: block; /* Ensuring the button takes full width */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  .Error{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:5px;
+    height:2rem;
+    width:20rem;
+    text-align:center;
+    padding:5px;
+    color :red;
+    
+    
+}

@@ -16,113 +16,147 @@
   margin: 20px 0px 0px 0px;
 }
 
-.headerList {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 50px;
+.headerList{
+  display:flex;
+  gap: 2rem;
+  margin-top:2rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* Remove scrollbar in Firefox */
+  -ms-overflow-style: none; /* Remove scrollbar in IE/Edge */
+  
 }
-
 .headerListItem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.headerListItem.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+headerListItem.active:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.headerListItem.active {
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 20px;
+.headerListItem.active svg {
+  color: #febb02;
+}
+.headerTitle{
+  margin:2rem 0;
 }
 
 .headerDesc {
-  margin: 20px 0px;
+  margin: 2rem 0;
 }
-
-.headerBtn {
-  background-color: #0071c2;
-  color: white;
-  font-weight: 500;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.headerSearch {
-  height: 30px;
-  background-color: white;
+.headerSearch
+{
+  background-color: rgba(255, 255, 255);
   border: 3px solid #febb02;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px 0px;
   border-radius: 5px;
-  position: absolute;
-  bottom: -25px;
-  width: 100%;
-  max-width: 1024px;
-}
-
-.headerIcon {
-  color: lightgray;
-}
-
-.headerSearchItem {
+  margin-top: 5rem;
+  padding: 10px;
   display: flex;
+  gap:4rem;
+  height:3.2rem;
   align-items: center;
-  gap: 10px;
+  color: grey;
+  position:absolute;
+  
+  align-items:center;
 }
-
-.headerSearchInput {
-  border: none;
-  outline: none;
+.headerSearchItem{
+  display:flex;
+  gap:0.5rem;
+  justify-content:center;
+  align-items:center;
 }
-
-.headerSearchText {
-  color: lightgray;
-  cursor: pointer;
+.headerSearchItem .headerBtn{
+  margin-top:0.1rem;
 }
+.headerSearchItem .headerSearchInput{
+  background-color: rgba(255, 255, 255, 0);
+  color:black;
+  border:none;
+  outline:none;
 
+}
 .date {
   position: absolute;
   top: 50px;
+  height:50vh;
+  left:10rem;
+  color:solid black;
+  box-shadow:10px solid black;;
+  
   z-index: 2;
 }
-
 .options {
   z-index: 2;
+  width:20rem;
   position: absolute;
   top: 50px;
+  padding:1rem;
   background-color: white;
-  color: gray;
+  display:flex;
+  flex-direction:column;
+  color: black;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 }
+.optionItem{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4rem;
+  margin-left:0.1rem;
+  background:grey;
+  margin-top:0.5rem;
+  padding:1rem;
 
-.optionItem {
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
 }
+.optionItem2{
+  display:flex;
+  justify-content:center;
+  background:grey;
+  margin-top:0.5rem;
+  padding:1rem;
 
-.optionCounter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
-  color: black;
 }
-
-.optionCounterButton {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #0071c2;
-  color: #0071c2;
-  cursor: pointer;
-  background-color: white;
+.optionItem .optionText{
+  margin-top:2rem;
+  
+}
+.optionItem2 .optionText1{
+  margin-top:2rem;
+  margin-left:0.5rem;
+}
+.optionItem2 .optionCounter{
+  margin-left:2rem;
+}
+.optionItem .optionText2{
+  margin-top:2rem;
+}
+.optionCounter{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  
+}
+.optionCounter .optionCounterNumber{
+  margin-top:2rem;
 }
 
 .optionCounterButton:disabled {
   cursor: not-allowed;
+  opacity: 0.5;
 }
+
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
